@@ -4,7 +4,7 @@ import { Play, Heart, Globe, MapPin, Mail, MessageCircle, Video, Code, TrendingU
 
 const TRANSLATIONS = {
   en: {
-    roles: ["Bilibili Content Creator", "Cross-border Specialist", "Marketing Strategist"],
+    roles: ["Bilibili Content Creator", "Cross-border Specialist", "Marketing Strategist", "Vibe Coding"],
     tags: "Tourism Management Graduate • CET-6",
     greeting: "Hi, I'm",
     name: "Han Wenbo",
@@ -44,7 +44,7 @@ const TRANSLATIONS = {
     footer: `© ${new Date().getFullYear()} Han Wenbo. All rights reserved.`
   },
   zh: {
-    roles: ["B站内容创作者", "跨境业务专员", "基层网点运营"],
+    roles: ["B站内容创作者", "跨境业务专员", "基层网点运营", "AI编程"],
     tags: "旅游管理专业 • 英语六级",
     greeting: "你好，我是",
     name: "韩文博",
