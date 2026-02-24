@@ -136,15 +136,16 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl md:text-7xl font-bold tracking-tight text-white"
+              className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight"
             >
-              {t.greeting} <br className="hidden md:block" />
-              <span className="text-white font-extrabold drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
+              <span className="block md:inline">{t.greeting}</span>
+              <br className="hidden md:block" />
+              <span className="block md:inline text-white font-extrabold drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] mt-2 md:mt-0">
                 {t.name}
               </span>
             </motion.h1>
             
-            <div className="h-12 md:h-16 flex items-center justify-center md:justify-start overflow-hidden">
+            <div className="h-12 md:h-16 flex items-center justify-center md:justify-start overflow-hidden pt-2 md:pt-0">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={roleIndex + lang}
@@ -163,7 +164,7 @@ export default function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-lg text-slate-400 max-w-xl mx-auto md:mx-0"
+              className="text-lg text-slate-400 max-w-xl mx-auto md:mx-0 pt-2 md:pt-0"
             >
               {t.description}
             </motion.p>
@@ -183,7 +184,6 @@ export default function App() {
                 alt="Han Wenbo" 
                 className="w-full h-full object-cover object-center"
                 onError={(e) => {
-                  // Fallback if user hasn't placed the image in public folder yet
                   (e.target as HTMLImageElement).src = "https://picsum.photos/seed/hanwenbo/400/400";
                 }}
               />
@@ -401,7 +401,6 @@ export default function App() {
                   alt="WeChat QR Code" 
                   className="w-48 h-48 object-contain"
                   onError={(e) => {
-                    // Fallback if user hasn't placed the image in public folder yet
                     (e.target as HTMLImageElement).src = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=WeChatID";
                   }}
                 />
