@@ -12,10 +12,10 @@ const TRANSLATIONS = {
     dataTitle: "The Power of Data",
     dataSubtitle: "Metrics that drive my creative and professional journey.",
     stats: [
-      { value: "3.5M+", label: "Total Views", desc: "Bilibili Creator" },
-      { value: "22,000+", label: "Community Fans", desc: "Highly Engaged" },
-      { value: "CET-6", label: "English Proficiency", desc: "Interpreter Role" },
-      { value: "Expert", label: "Tour Guide", desc: "Itinerary Planning" }
+      { value: "3.5M+", label: "Total Views", desc: "Viral Content" },
+      { value: "22,000+", label: "Community", desc: "0-1 Growth" },
+      { value: "CET-6", label: "Bilingual", desc: "Interpretation" },
+      { value: "Expert", label: "Global Ops", desc: "e-term Proficient" }
     ],
     journeyTitle: "Career Journey",
     journeySubtitle: "Exploring the intersection of media and management.",
@@ -23,11 +23,11 @@ const TRANSLATIONS = {
     tabCorporate: "Corporate / Mgmt",
     timeline: {
       creative: [
-        { year: "Present", title: "Bilibili Content Creator", description: "Achieved 3.5M+ total views and built a community of 22,000+ dedicated fans. Specialized in engaging video content and social media growth strategies." },
+        { year: "Present", title: "Bilibili Content Creator", description: "Spearheaded 0-1 community growth, achieving 3.5M+ viral views. Expert in leveraging data analytics to drive content creation and capture Gen Z traffic trends." },
         { year: "Past", title: "Tour Guide & Itinerary Expert", description: "Crafted unique travel experiences, utilizing strong communication and planning skills to manage diverse groups." }
       ],
       corporate: [
-        { year: "Recent", title: "China Post Management Experience", description: "Gained valuable insights into large-scale logistics, team coordination, and corporate management practices." },
+        { year: "Recent", title: "China Post Management Experience", description: "Demonstrated strong field execution by achieving a breakthrough in high-end logistics services through proactive on-site support and client relationship building." },
         { year: "Previous", title: "Xunku Data Ops", description: "Handled data operations, leveraging analytical tools to drive insights and optimize processes." }
       ]
     },
@@ -52,10 +52,10 @@ const TRANSLATIONS = {
     dataTitle: "数据驱动力",
     dataSubtitle: "推动我创意与职业旅程的核心数据。",
     stats: [
-      { value: "350万+", label: "累计播放量", desc: "B站创作者" },
-      { value: "2.2万+", label: "社区粉丝", desc: "高活跃度" },
-      { value: "CET-6", label: "英语能力", desc: "口译经验" },
-      { value: "精通", label: "导游经验", desc: "行程规划" }
+      { value: "350万+", label: "累计播放量", desc: "现象级传播" },
+      { value: "2.2万+", label: "社区粉丝", desc: "0-1 矩阵增长" },
+      { value: "CET-6", label: "双语沟通", desc: "即时口译经验" },
+      { value: "精通", label: "跨境系统", desc: "熟练操作 e-term" }
     ],
     journeyTitle: "职业旅程",
     journeySubtitle: "探索媒体与管理的交汇点。",
@@ -63,12 +63,12 @@ const TRANSLATIONS = {
     tabCorporate: "企业 / 管理",
     timeline: {
       creative: [
-        { year: "至今", title: "B站内容创作者", description: "累计播放量350万+，积累2.2万+忠实粉丝。专注于高互动视频内容与社群增长策略。" },
-        { year: "过去", title: "导游与行程规划师", description: "打造独特的旅行体验，运用出色的沟通与统筹能力管理多元化团队。" }
+        { year: "至今", title: "B站内容创作者", description: "主导 0-1 社群增长，达成 350 万+ 现象级传播。擅长通过数据反哺内容创作，精准捕捉 Z 世代流量红利。" },
+        { year: "过去", title: "导游与行程规划师", description: "打造独特的旅行体验，运用出色的跨文化沟通与统筹能力，独立管理并制定多元化团队行程。" }
       ],
       corporate: [
-        { year: "近期", title: "中国邮政管理经验", description: "深入了解大型物流运作、团队协调与企业管理实践。" },
-        { year: "早期", title: "讯库数据运营", description: "负责数据运营，利用分析工具挖掘洞察并优化流程。" }
+        { year: "近期", title: "中国邮政基层运营", description: "具备极强的实地执行力，通过主动驻点服务与专业时效讲解，成功获取农户信任，实现高端物流业务的零突破。" },
+        { year: "早期", title: "讯库数据运营", description: "负责底层数据运营，利用分析工具深挖市场洞察，持续优化数据流转效率。" }
       ]
     },
     skillsTitle: "技能与专长",
@@ -79,7 +79,7 @@ const TRANSLATIONS = {
       { title: "商业与管理", skills: ["e-term", "英语口译", "客户关系", "跨境业务"] }
     ],
     ctaTitle: "期待合作",
-    ctaSubtitle: "正在寻找充满活力的营销管培生或跨境业务助理？让我们建立联系，共同创造价值。",
+    ctaSubtitle: "正在寻找具备破局能力的营销管培生或跨境业务助理？期待与您建立联系，共同创造商业价值。",
     wechatBtn: "点击此处添加微信",
     footer: `© ${new Date().getFullYear()} 韩文博. 保留所有权利。`
   }
@@ -198,12 +198,12 @@ export default function App() {
             <p className="text-slate-400">{t.dataSubtitle}</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
-              { icon: <Play className="w-8 h-8 text-[#00A1D6]" />, ...t.stats[0] },
-              { icon: <Heart className="w-8 h-8 text-[#FB7299]" />, ...t.stats[1] },
-              { icon: <Globe className="w-8 h-8 text-[#1E3A8A]" />, ...t.stats[2] },
-              { icon: <MapPin className="w-8 h-8 text-emerald-400" />, ...t.stats[3] }
+              { icon: <Play className="w-6 h-6 md:w-8 md:h-8 text-[#00A1D6]" />, ...t.stats[0] },
+              { icon: <Heart className="w-6 h-6 md:w-8 md:h-8 text-[#FB7299]" />, ...t.stats[1] },
+              { icon: <Globe className="w-6 h-6 md:w-8 md:h-8 text-[#1E3A8A]" />, ...t.stats[2] },
+              { icon: <MapPin className="w-6 h-6 md:w-8 md:h-8 text-emerald-400" />, ...t.stats[3] }
             ].map((stat, i) => (
               <motion.div 
                 key={i}
@@ -211,17 +211,17 @@ export default function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group relative p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 overflow-hidden"
+                className="group relative p-4 md:p-6 rounded-2xl md:rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="relative z-10 space-y-4">
-                  <div className="p-3 rounded-2xl bg-white/5 inline-block">
+                <div className="relative z-10 space-y-3 md:space-y-4">
+                  <div className="p-2 md:p-3 rounded-xl md:rounded-2xl bg-white/5 inline-block">
                     {stat.icon}
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-                    <div className="text-sm font-medium text-slate-300">{stat.label}</div>
-                    <div className="text-xs text-slate-500 mt-1">{stat.desc}</div>
+                    <div className="text-xl md:text-3xl font-bold text-white mb-1">{stat.value}</div>
+                    <div className="text-xs md:text-sm font-medium text-slate-300">{stat.label}</div>
+                    <div className="text-[10px] md:text-xs text-slate-500 mt-1">{stat.desc}</div>
                   </div>
                 </div>
               </motion.div>
