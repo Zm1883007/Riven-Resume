@@ -23,7 +23,7 @@ const TRANSLATIONS = {
     tabCorporate: "Corporate / Mgmt",
     timeline: {
       creative: [
-        { year: "Present", title: "Bilibili Content Creator", description: "Spearheaded 0-1 community growth, achieving 3.5M+ viral views. Expert in leveraging data analytics to drive content creation and capture Gen Z traffic trends." },
+        { year: "Present", title: "Bilibili Content Creator", description: "Spearheaded 0-1 community growth, achieving 3.5M+ viral views. Expert in leveraging data analytics to drive content creation and capture traffic trends." },
         { year: "Past", title: "Tour Guide & Itinerary Expert", description: "Crafted unique travel experiences, utilizing strong communication and planning skills to manage diverse groups." }
       ],
       corporate: [
@@ -63,7 +63,7 @@ const TRANSLATIONS = {
     tabCorporate: "企业 / 管理",
     timeline: {
       creative: [
-        { year: "至今", title: "B站内容创作者", description: "主导 0-1 社群增长，达成 350 万+ 现象级传播。擅长通过数据反哺内容创作，精准捕捉 Z 世代流量红利。" },
+        { year: "至今", title: "B站内容创作者", description: "主导 0-1 社群增长，达成 350 万+ 现象级传播。擅长通过数据反哺内容创作，精准捕捉流量红利。" },
         { year: "过去", title: "导游与行程规划师", description: "打造独特的旅行体验，运用出色的跨文化沟通与统筹能力，独立管理并制定多元化团队行程。" }
       ],
       corporate: [
