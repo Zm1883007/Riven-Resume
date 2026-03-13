@@ -47,7 +47,7 @@ const TRANSLATIONS = {
     roles: ["B站内容创作者", "跨境业务专员", "基层网点运营", "AI编程"],
     tags: "旅游管理专业 • 英语六级",
     greeting: "你好，我是",
-    name: "韩文博",
+    name: "韩文博 20023",
     description: "连接创意内容制作与专业企业策略。对数据驱动的营销与跨境业务充满热情。",
     dataTitle: "数据驱动力",
     dataSubtitle: "推动我创意与职业旅程的核心数据。",
